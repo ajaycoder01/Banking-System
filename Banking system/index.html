@@ -1,0 +1,34 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Bank Account App</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <h2>Bank Account Interface</h2>
+
+  <div>
+    <input type="text" id="ownerName" placeholder="Enter account owner's name">
+    <button onclick="createAccount()">Create Account</button>
+  </div>
+
+  <div id="accountControls" style="display:none;">
+    <h3>Welcome, <span id="ownerDisplay"></span>!</h3>
+    <p>Balance: $<span id="balance">0</span></p>
+
+    <input type="number" id="amountInput" placeholder="Enter amount">
+    <button onclick="deposit()">Deposit</button>
+    <button onclick="withdraw()">Withdraw</button>
+
+    <div class="output">
+      <h4>Transaction History:</h4>
+      <ul id="history"></ul>
+    </div>
+  </div>
+
+  <script src="script.js"></script>
+
+</body>
+</html>
